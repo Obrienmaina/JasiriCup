@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JasiriCup</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+      padding-bottom: 4px;
+    }
+
+    nav a.active {
+      border-bottom: 3px solid green;
+    }
+
+    .cta-button {
+      background: #00C37A;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .breadcrumb {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .impact-story, .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      background: #f9f9f9;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      gap: 2rem;
+    }
+
+    .impact-story img, .about-section img {
+      max-width: 250px;
+      border-radius: 8px;
+    }
+
+    .impact-text, .about-text {
+      flex: 1;
+    }
+
+    .btn-read-more {
+      margin-top: 1rem;
+      display: inline-block;
+      background: #B85FFF;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cards {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      flex: 1;
+      padding: 1rem;
+      border-radius: 12px;
+      color: white;
+    }
+
+    .card.purple {
+      background: #A58CF9;
+    }
+
+    .card.green {
+      background: #00C37A;
+    }
+
+    footer {
+      background: #2e2e2e;
+      color: white;
+      padding: 2rem;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .footer-social a {
+      color: white;
+      margin-right: 1rem;
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      .impact-story, .about-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .cards {
+        flex-direction: column;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>jaSiri<span style="color:#00C37A">Cup</span></h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Team</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="cta-button">Get in Touch</a>
+  </header>
+
+  <main>
+    <p class="breadcrumb">Home / About</p>
+
+    <section class="impact-story">
+      <div class="impact-text">
+        <h2>Impact Story Title</h2>
+        <p>This initiative targets girls in rural areas (ASAL Regions that remain inadequately served), who often lack access to affordable menstrual products and adequate education.</p>
+        <a href="#" class="btn-read-more">Read More</a>
+      </div>
+      <img src="https://via.placeholder.com/250x250.png?text=Girl+Image" alt="Smiling girl">
+    </section>
+
+    <section class="about-section">
+      <img src="https://via.placeholder.com/200x250.png?text=Portrait" alt="Team Member">
+      <div class="about-text">
+        <h2>About JasiriCup</h2>
+        <p>This initiative targets girls in rural areas (ASAL Regions that remain inadequately served), who often lack access to affordable menstrual products and adequate education.</p>
+      </div>
+    </section>
+
+    <section class="cards">
+      <article class="card purple">
+        <h3>Jasiri Initiative Vision</h3>
+        <p>This initiative targets girls in rural areas (ASAL Regions that remain inadequately served), who often lack access to affordable menstrual products and adequate education.</p>
+      </article>
+
+      <article class="card green">
+        <h3>Jasiri Initiative Mission</h3>
+        <p>This initiative targets girls in rural areas (ASAL Regions that remain inadequately served), who often lack access to affordable menstrual products and adequate education.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <h3>jaSiriCup</h3>
+        <p>All rights reserved © 2025</p>
+      </div>
+      <div class="footer-social">
+        <p>Connect with JasiriCup on:</p>
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+        <a href="#">🔗</a>
+        <a href="#">▶️</a>
+      </div>
+      <div>
+        <p>Menstrual products and adequate education.<br>
+          This initiative targets girls in rural areas (ASAL Regions that remain inadequately served) products and adequate.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
