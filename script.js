@@ -13,5 +13,5 @@
     showSlide(currentSlide);
   }
 
-setInterval(() => changeSlide(1), 8000);
+setInterval(() => changeSlide(1), 24000);
 
