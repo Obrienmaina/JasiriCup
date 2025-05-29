@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <title>JasiriCup</title>
   <link rel="stylesheet" href="Mainstyle.css">
+  <link rel="shortcut icon" href=".\Media\Images\Favicon\jasiri-favicon.png" sizes="32x32" type="image/x-icon">
 </head>
 <body>
 
   <header>
-    <h1>jaSiri<span style="color:#00C37A">Cup</span></h1>
+    <img src=".\Media\Images\Logo\JasiriCup_Native_Logo.svg" width="15%" loading="lazy" alt="">
     <nav>
       <ul>
         <li><a href="#" class="active">Home</a></li>
@@ -26,19 +31,47 @@
     <p class="breadcrumb">Home / About</p>
 
     <section class="impact-story">
-      <div class="impact-text">
-        <h2>Impact Story Title</h2>
-        <p>This initiative targets girls in rural areas (ASAL Regions that remain inadequately served), who often lack access to affordable menstrual products and adequate education.</p>
-        <a href="#" class="btn-read-more">Read More</a>
+    <div class="banner-container">
+      <div class="banner-slide active">
+        <div class="impact-text">
+          <h2>Empowering Rural Girls</h2>
+          <p>This initiative targets girls in rural areas (ASAL Regions that remain inadequately served), who often lack access to affordable menstrual products and adequate education.</p>
+          <a href="#" class="btn-read-more">Read More</a>
+        </div>
+        <img src="./Media/Images/Banner Images/happy girl.png" alt="Smiling girl" loading="lazy">
       </div>
-      <img src="https://via.placeholder.com/250x250.png?text=Girl+Image" alt="Smiling girl">
-    </section>
+
+      <div class="banner-slide">
+        <div class="impact-text">
+          <h2>Breaking the Stigma</h2>
+          <p>JasiriCup promotes dignity and confidence by providing menstrual health education and sustainable products in marginalized communities.</p>
+          <a href="#" class="btn-read-more">Read More</a>
+        </div>
+        <img src="./Media/Images/Banner Images/happy girl.png" alt="Girls in classroom" loading="lazy">
+      </div>
+
+      <div class="banner-slide">
+        <div class="impact-text">
+          <h2>Sustainable Menstrual Care</h2>
+          <p>With reusable menstrual cups and inclusive awareness, we help girls stay in school and reduce period poverty in ASAL regions.</p>
+          <a href="#" class="btn-read-more">Read More</a>
+        </div>
+        <img src="./Media/Images/Banner Images/cup.png" alt="Reusable menstrual products" loading="lazy">
+      </div>
+
+      <div class="banner-nav">
+        <button onclick="changeSlide(-1)">&#10094;</button>
+        <button onclick="changeSlide(1)">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
 
     <section class="about-section">
-      <img src="https://via.placeholder.com/200x250.png?text=Portrait" alt="Team Member">
+      <img class="about-jasiricup" src=".\Media\Images\Body Images\Home Page Images\lady.png" alt="School Girl in uniform" loading="lazy">
       <div class="about-text">
         <h2>About JasiriCup</h2>
-        <p>This initiative targets girls in rural areas (ASAL Regions that remain inadequately served), who often lack access to affordable menstrual products and adequate education.</p>
+        <p>JasiriCup is an initiative dedicated to empowering girls in rural and underserved Arid and Semi-Arid Land (ASAL) regions by addressing the critical gap in menstrual health and education. Many girls in these areas face limited access to affordable and sustainable menstrual products, leading to school absenteeism, stigma, and poor hygiene practices. JasiriCup provides reusable menstrual cups alongside culturally sensitive education to promote dignity, confidence, and long-term health. By focusing on these marginalized communities, the initiative aims to break taboos, support school retention, and foster gender equality through informed and sustainable menstrual care solutions.</p>
       </div>
     </section>
 
@@ -63,10 +96,10 @@
       </div>
       <div class="footer-social">
         <p>Connect with JasiriCup on:</p>
-        <a href="#">📘</a>
-        <a href="#">📸</a>
-        <a href="#">🔗</a>
-        <a href="#">▶️</a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-whatsapp"></a>
       </div>
       <div>
         <p>Menstrual products and adequate education.<br>
@@ -74,6 +107,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>

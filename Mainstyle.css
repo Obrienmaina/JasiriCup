@@ -5,9 +5,25 @@
       padding: 0;
     }
 
+
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
       line-height: 1.6;
+      max-width: 1420px;
+      width: 100%;
+      padding: 20px;
+      margin-left: auto; 
+      margin-right: auto;
+    }
+
+    h2 {
+      padding-bottom: 20px;
+    }
+    h3 {
+      padding-bottom: 16px;
     }
 
     header {
@@ -18,6 +34,74 @@
       align-items: center;
       flex-wrap: wrap;
     }
+
+        .impact-story {
+      position: relative;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    .banner-container {
+      position: relative;
+    }
+
+    .banner-slide {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      animation: fade 0.5s ease-in-out;
+    }
+
+    .banner-slide.active {
+      display: flex;
+    }
+
+    .banner-slide img {
+      max-width: 40%;
+      height: auto;
+      border-radius: 16px;
+    }
+
+    .impact-text {
+      max-width: 55%;
+    }
+
+    .banner-nav {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding: 0 0px;
+      box-sizing: border-box;
+    }
+
+    .banner-nav button {
+      
+      color: #303030;
+      border: 1px solid #404040;
+      width: 24px;
+      height: 24px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease-in-out;
+}
+
+    .banner-nav button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    @keyframes fade {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
 
     nav ul {
       display: flex;
@@ -33,12 +117,13 @@
     }
 
     nav a.active {
-      border-bottom: 3px solid green;
+      border-bottom: 3px solid #1AA75B;
     }
 
     .cta-button {
-      background: #00C37A;
+      background: #1AA75B;
       color: white;
+      font-weight: 400;
       padding: 0.5rem 1rem;
       border-radius: 20px;
       text-decoration: none;
@@ -56,12 +141,16 @@
     .impact-story, .about-section {
       display: flex;
       flex-wrap: wrap;
-      background: #f9f9f9;
       padding: 2rem;
       margin-bottom: 2rem;
       border-radius: 12px;
       gap: 2rem;
     }
+
+    .impact-story {
+      background: #f9f9f9;
+    }
+
 
     .impact-story img, .about-section img {
       max-width: 250px;
@@ -75,12 +164,23 @@
     .btn-read-more {
       margin-top: 1rem;
       display: inline-block;
-      background: #B85FFF;
+      background: #8B65DC;
       color: white;
       padding: 0.5rem 1rem;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+    }
+
+    .about-jasiricup {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 350px; /* or whatever max height you prefer */
+      aspect-ratio: 3/4; /* or 4/5 depending on the original photo */
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
     }
 
     .cards {
@@ -92,17 +192,18 @@
 
     .card {
       flex: 1;
-      padding: 1rem;
+      padding: 4rem;
       border-radius: 12px;
       color: white;
     }
 
     .card.purple {
-      background: #A58CF9;
+      background: #8B65DC;
     }
 
     .card.green {
-      background: #00C37A;
+      background: #1AA75B;
+      padding-top: 40px;
     }
 
     footer {
@@ -121,7 +222,12 @@
     .footer-social a {
       color: white;
       margin-right: 1rem;
+      text-decoration: none;
       font-size: 1.2rem;
+    }
+
+    .footer-social a:hover {
+      color: #1AA75B;
     }
 
     @media (max-width: 768px) {
@@ -140,4 +246,17 @@
         align-items: flex-start;
         gap: 1rem;
       }
-    }
+      .banner-slide {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .banner-slide img {
+        max-width: 100%;
+        margin-top: 20px;
+      }
+
+      .impact-text {
+        max-width: 100%;
+      }
+}
